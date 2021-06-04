@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Error from './Error.js';
+import PropTypes from 'prop-types';
 
 const AskBudget = ({ setBudget, setRemaining, setShowAsk }) => {
 	const [amount, setAmount] = useState(0);
@@ -46,6 +47,12 @@ const AskBudget = ({ setBudget, setRemaining, setShowAsk }) => {
 			</form>
 		</Fragment>
 	);
+};
+
+AskBudget.propTypes = {
+	setBudget: PropTypes.func.isRequired,
+	setRemaining: PropTypes.func.isRequired,
+	setShowAsk: PropTypes.func.isRequired,
 };
 
 export default AskBudget;
