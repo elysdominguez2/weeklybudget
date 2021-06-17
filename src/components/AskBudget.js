@@ -28,9 +28,7 @@ const AskBudget = ({ setBudget, setRemaining, setShowAsk }) => {
 	return (
 		<Fragment>
 			<h2> Put your budget here </h2>
-
 			{error ? <Error message="The Budget is not correct" /> : null}
-
 			<form onSubmit={addBudget}>
 				<input
 					type="number"
@@ -42,7 +40,7 @@ const AskBudget = ({ setBudget, setRemaining, setShowAsk }) => {
 				<input
 					type="submit"
 					className="button-primary u-full-width"
-					value="Definir presupuesto"
+					value="Define budget"
 				/>
 			</form>
 		</Fragment>
